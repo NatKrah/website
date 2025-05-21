@@ -1,14 +1,21 @@
 
 /*New CSS file for website*/
 
-h1 {
-    color: red;
+body{
+    background-color: black;
 }
 
-h2 {
+img{
+    width:10%;
+    border: 20px;
+}
+
+h1{
     color: white;
 }
 
-body {
-    background-color: black;
+p{
+    color: white;
 }
+
+
