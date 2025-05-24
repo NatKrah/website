@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 
     <!-- Set font type and viewpoint-->
@@ -13,11 +13,14 @@
     <!-- Description of website (when searched for on search engine)-->
     <meta name="description" content="My personal website, yipeee">
 
+    <meta name="author" content="Nat Krah">
+
     <!-- Title of the website-->
     <title>Notes</title>
 
     <!--Linking the css file-->
-    <link rel = "stylesheet" href = "app.css">
+    <link rel = "stylesheet" href = "notes.css">
+    <script defer src="notes.js"></script>
 
 
 </head>
@@ -37,7 +40,8 @@
     <button onClick="alertButton()"> Click meeeee </button>
 
     <!--Paragram-->
-    <p class="upper"> Cool info here I promise</p>
+    <!-- Can belong to multiple classes, currently belongs to the upper and text class-->
+    <p class="upper text"> Cool info here I promise</p>
 
     <!--emphasise info-->
     <em></em>
@@ -45,16 +49,49 @@
     <!--Like empahsis-->
     <strong></strong>
     
-    <p class="lower"> yeppers </p>
+    <!-- this element has a unique id that can be called-->
+    <p class="lower" id="Unique id"> yeppers </p>
 
     <!-- Generate text using lorem<num words> used &<charkey>; for special charaters-->
     <p1> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique maxime, ea consectetur distinctio laborum aliquam corrupti ad ullam neque nesciunt iste id rerum pariatur, enim nulla, est totam minus quam placeat blanditiis. Qui nisi quisquam porro est dolore ipsam, magnam similique ullam sit sapiente ut natus, perspiciatis maxime dolorum modi?</p1>
 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- A basics link-->
+    <a href ="notes.html"> This is a link</a>
+
+    <!-- text with forced line break-->
+    <p>Line 1 <br> line 2</p>
+
+    <!-- Creates a horizontal line to break things up-->
+    <hr>
+
+    <!-- pre formated text (saves linebreaks and white space)-->
+    <pre> 
+        asd
+        asd
+        asd
+        asd
+        asd
+    </pre>
+
+    <!--Using div to group multiple things together for more sysinct formating-->
+    <div>
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 9 million inhabitants.</p>
+    </div>
+
+    <a href="#Unique id"> Jump to yeppers</a>
+
+    <p id="demo">asd</p>
+
+    <!--Creates another document within the html file-->
+
+
 
 </body>
-
-<!-- At bottom to everything loads before functionality -->
-<link src="app.js"><script></script>
-
 
 </html>

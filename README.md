@@ -1,1 +1,1 @@
-Personal website to host info about me and person projects
+Personal website to host info about me and personal projects
