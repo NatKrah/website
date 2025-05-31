@@ -1,0 +1,58 @@
+
+
+:root{
+    --lightBlue: #00FFFF;
+    --grey: #2B2B2B;
+}
+
+body{
+    background-color: var(--grey);
+}
+
+#navbarResponsive{
+    position: fixed;
+    display: inline;
+    top: 1rem;
+    right:1rem;
+}
+
+.nav-link{
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #00FFFF;
+
+    text-decoration: none;
+    padding: 1rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    border-style: solid;
+    border-width: 0px;
+    border-right-width: .125rem; 
+}
+
+/*should fix this but whaters*/
+.resumeHeader{
+    border-style: none;
+}
+
+.header{
+    color:#fff;
+    text-shadow: .125rem .125rem 1rem var(--lightBlue);
+
+}
+
+.basicText{
+    color:#fff;
+}
+
+h2{
+    color:#fff;
+}
+
+
+#selfie{
+    width: 200px;
+}
+
+hr{
+    color:#ffffff;
+}

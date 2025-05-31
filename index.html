@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -14,61 +18,62 @@
 
     <!-- Title of the website-->
     <title>Nat-Krah</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+    <!--Add an cool icon-->
+
 
     <!--Add a base URL and base the sub pages off of it-->
 
     <!--Linking the css and js file-->
-    <link rel="stylesheet" href="styles/basic.css">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="style.css">
 
     <script defer src="index.js"></script>
 </head>
-
-
 <body>
-    <div id="overlay"> </div>
-
-    <div class="overlay-text">
-            <a href="index.html">Home</a>
-            <a href="projectsH.html">Projects</a>
-            <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact</a>
-    </div>
-
-
-    <header>
-        <!--For webrowsing, displays all navigation-->
-        <nav class="nav full-nav">
-            <div>
-                <h1>Home</h1>
-            </div>
-            <div>
-                <a href="index.html">Home</a>
-                <a href="projectsH.html">Projects</a>
-                <a href="resume.html">Resume</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
-
-        <!--For mobil, uses a sandwitch for nav-->
-        <nav class="nav mobil-nav">
-            <div>
-                <h1>Home</h1>
-            </div>
-            <div>
-                <i class="fa-solid fa-bars" title="button to open navigation"></i>
-            </div>
-        </nav>
-    </header>
+    <nav class="header">
+        <!--Do stuffs for the top of the landing page-->
+        
+        <!--Add a button that can be used to show the nav bar-->
+        
+        <div id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link resumeHeader" href="assets/resume.pdf" target="_blank">Resume</a>
+            </ul>
+        </div>
+    </nav>
 
     <div>
-        <img src="images/aboutMainPhoto.JPG" alt="Selfie" width="50px">
-        <p>Hi!</p>
-        <p>I'm Nat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate in aspernatur harum quisquam dolorem perferendis iure porro deserunt dicta corrupti! Totam nemo debitis ratione ullam consequuntur, quasi quam rerum ipsa quis alias. Voluptatibus corporis eaque cupiditate obcaecati, delectus esse expedita sunt animi consequatur ab asperiores sint mollitia tenetur unde voluptate.</p>
+        <!--img src="images/introBackGround.jpg" alt=""-->
+        <h1 class="header">Nat-Krah</h1>
+        <img src="" alt="">
+        <h2>Hi!</h2>
+        <p class="basicText">welcome to my website :3</p>
+
+    </div>
+
+    <hr>
+
+    <div> 
+        <h1 class="header">About</h1>
+        <img src="images/aboutMainPhoto.JPG" alt="selfie" id="selfie">
+        <p class="basicText">I'm Nat, a second year at RIT Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic cum ratione nobis harum quis doloribus ab quaerat amet a sint officiis nam explicabo ullam quia, officia nisi? Sit nesciunt ex eveniet, quidem alias aperiam repellendus dolorum dignissimos tenetur ipsum optio sed magnam aliquam provident atque laboriosam nulla explicabo? Quibusdam, id?</p>
+    </div>
+
+    <hr>
+
+    <div>
+        <h1 class="header">Projects</h1>
+        <p class="basicText">For as long as I can remeber I've loved bringing my ideas to life, here are a couple:</p>
+    </div>
+
+    <hr>
+
+
+    <div>
+        <h1 class="header">Contact</h1>
+        <p class="basicText">See something that interest you? Or just wanna chat? <br>I love meeting new people!</p>
     </div>
 
 
