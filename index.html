@@ -1,7 +1,30 @@
-<!DOCTYPE html>
+<!-- To do
+Add semantic meaning instead of just using divs
+check using a html checker
+add lil icon
 
 
-<html lang="en">
+Nav-bar:
+Make it so when the screen is shrucken it creates a button that can be used to exapand nav
+
+Splash:
+find a cool photo that relates to me, or get rid of this kinda stuff
+fit image to page, so theres no funky border
+Move stuff ontop of photo and position it
+Add scrolling effect
+
+About
+Literally everything
+
+Projects
+Literally everything
+
+Contact
+center info
+format form submission
+setup form submission so I can actually recieve stuffs
+
+-->
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -25,7 +48,7 @@
     <title>Nat-Krah</title>
 
     <!--Add an cool icon-->
-    <link rel="icon" href="" type="image/x.icon">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x.icon">
 
     <!--Linking the css and js file-->
     <link rel="stylesheet" href="style.css">
@@ -38,7 +61,7 @@
         <!--Add a button that can be used to show the nav bar-->
         
         <div id="navbarResponsive">
-            <ul class="navbar-nav ms-auto">
+            <ul id="navbar-nav">
                 <li><a class="nav-link" href="#about">About</a></li>
                 <li><a class="nav-link" href="#projects">Projects</a></li>
                 <li><a class="nav-link" href="#contact">Contact</a></li>
@@ -51,16 +74,15 @@
         <!-- width="396" height="594"-->
         <img src="images/titlephoto.jpg" alt="" id="titlePhoto">
         <h1 class="header">Nat-Krah</h1>
-        <img src="" alt="">
         <h2>Hi!</h2>
         <p class="basicText">welcome to my website :3</p>
 
     </div>
 
-    <hr>z
+    <hr>
 
     <div> 
-        <h1 class="header">About</h1>
+        <h2 class="header" id="about">About</h2>
         <img src="images/aboutMainPhoto.JPG" alt="selfie" id="selfie">
         <p class="basicText">I'm Nat, a second year at RIT Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic cum ratione nobis harum quis doloribus ab quaerat amet a sint officiis nam explicabo ullam quia, officia nisi? Sit nesciunt ex eveniet, quidem alias aperiam repellendus dolorum dignissimos tenetur ipsum optio sed magnam aliquam provident atque laboriosam nulla explicabo? Quibusdam, id?</p>
     </div>
@@ -68,7 +90,7 @@
     <hr>
 
     <div>
-        <h1 class="header">Projects</h1>
+        <h2 class="header" id="projects">Projects</h2>
         <p class="basicText">For as long as I can remeber I've loved bringing my ideas to life, here are a couple:</p>
     </div>
 
@@ -76,10 +98,28 @@
 
 
     <div>
-        <h1 class="header">Contact</h1>
-        <p class="basicText">See something that interest you? Or just wanna chat? <br>I love meeting new people!</p>
+        <h2 class="header" id="contact">Contact</h2>
+        <p class="basicText">See something interesting? Or just wanna chat? </p>
+        <p class="basicText">I love meeting new people!</p>
+        
+        <ul id="contact-list">
+            <li class="contact-item"><a class="contact-icon" href="mailto:nicholaskrah1@gmail.com"><img class="contact-icon" src="images/mail.png" alt="email symbol"></a></li>
+            <li class="contact-item"><a class="contact-icon" href="https://github.com/nat-krah" target="_blank"><img class="contact-icon" src="images/github.png" alt="github symbol"></a></li>
+            <li class="contact-item"><a class="contact-icon" href="https://www.linkedin.com/in/nat-krah-15a19b359/" target="_blank"><img class="contact-icon" src="images/linkedin.png" alt="linkedin symbol"></a></li>        
+        </ul>
+        
+        <form action="https://httpbin.org/post" method="post"> 
+            <p class="basicText"><label for="email">Email</label></p>
+            <input type="email" name="email" id="email" placeholder="email@domain.com" required autocomplete="on">
 
-        <a href="mailto:nat-krah" target="_blank">email</a>
+            <p class="basicText"><label for="message">Message</label></p>
+            <textarea name="message" id="message" cols="70" rows="5" placeholder="Let's chat!"></textarea>
+
+            <button type="submit">Send</button>
+            <button type="reset">Clear</button>
+        </form>
+
+
     </div>
 
 
